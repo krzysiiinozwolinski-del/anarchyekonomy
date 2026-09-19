@@ -1,0 +1,28 @@
+name: AnarchyEconomy
+version: 1.0.0
+main: pl.krzysztof.anarchyeconomy.AnarchyEconomy
+api-version: '26.2'
+author: Krzysztof
+description: Ekonomia, sklep, sprzedaz i rynek graczy.
+commands:
+  bal:
+    description: Pokazuje saldo
+    aliases: [balance, money]
+  pay:
+    description: Przelewa pieniadze graczowi
+    usage: /pay <gracz> <kwota>
+  baltop:
+    description: Ranking najbogatszych
+  sell:
+    description: Sprzedaje przedmiot z reki
+    usage: /sell [ilosc|all]
+  sellall:
+    description: Sprzedaje wszystkie obslugiwane przedmioty
+  shop:
+    description: Otwiera sklep
+  market:
+    description: Rynek graczy
+    usage: /market [sell <cena>]
+permissions:
+  anarchyeconomy.admin:
+    default: op
